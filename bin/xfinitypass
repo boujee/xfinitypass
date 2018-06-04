@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+'use strict';
+const path = require('path');
+const xfinitypass = require('..');
+
+function addPath(newPath) {
+  const p = process.env.PATH.split(path.delimiter);
+  p.push(newPath);
+  process.env.PATH = p.join(path.delimiter);
+}
+
+addPath(xfinitypass.getBinPath());
+
+xfinitypass.run().catch(err => console.error(err));

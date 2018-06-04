@@ -1,0 +1,10 @@
+{
+  "name": "xfinitypass",
+  "private": true,
+  "version": "0.0.1",
+  "bin": "bin/xfinitypass",
+  "dependencies": {
+    "geckodriver": "^1.11.0",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  }
+}
